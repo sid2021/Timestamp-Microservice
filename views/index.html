@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timestamp API</title>
+    <link rel="stylesheet" a href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Timestamp API</h1>
+      <p>
+        This project is based on
+        <a
+          href="https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice"
+        >
+          Freecodecamp's API and Microservices certification.</a
+        >. It is an API which allows to get Unix timestamps and UTC dates in a
+        JSON format.
+      </p>
+      <h2>Example usage</h2>
+      <h3>Get the Current Date</h3>
+      <p>To get the data for the current date go to the following route:</p>
+      <pre><code>/api/timestamp</code></pre>
+      <h3>Get the Chosen Date</h3>
+      <p>
+        To obtain the data for a chosen date add the date (YYYY-MM-DD format) or
+        a unix timestamp to the route:
+      </p>
+      <pre><code>/api/timestamp/2020-06-15</code></pre>
+      <p>Unix timestamp has to consist of numbers only:</p>
+      <pre><code>/api/timestamp/123987456</code></pre>
+      <h2>Example Response</h2>
+      <p>
+        A successful response should return a unix timestamp and its associated
+        UTC date in a JSON format:
+      </p>
+      <pre><code>
+        {
+          "unix":1601078400000,
+          "utc":"Sat, 26 Sep 2020 00:00:00 GMT"
+        }
+    </code></pre>
+      <footer>
+        Created by <a href="https://github.com/sid2021">sid2021</a>
+      </footer>
+    </div>
+  </body>
+</html>
